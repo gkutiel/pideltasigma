@@ -71,12 +71,17 @@ document.addEventListener('DOMContentLoaded', () => {
         { str: 'omega', tex: '\\omega' }, { str: 'omega', tex: '\\omega' }
     ]
 
+    var i;
     const view = document.getElementById('view')
     const answer = document.getElementById('answer')
     const ls = shuffle(letters)
-    var i = 0;
-    katex.render(ls[i].tex, view)
-    answer.focus()
+
+    function start() {
+        i = 0;
+        katex.render(ls[i].tex, view)
+        answer.focus()
+    }
+
     answer.addEventListener('keyup', () => {
         const str = answer.value
         if (str !== ls[i].str) return
@@ -88,4 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         katex.render(ls[i].tex, view)
     })
+
+    start()
 })

@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 html,
 body {
     margin: 0;
@@ -8,15 +13,18 @@ body {
 
 #content {
     width: 90%;
-    margin: 30% auto;
+    padding-top: 20%;
+    margin: 0 auto;
     text-align: center;
 }
 
 #view {
     text-align: center;
+    font-size: 300%;
 }
 
 #answer {
+    padding-top: 1em;
     padding-bottom: .5em;
     width: 10em;
     text-align: center;
