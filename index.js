@@ -74,12 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
     var i;
     const view = document.getElementById('view')
     const answer = document.getElementById('answer')
+    const count = document.getElementById('count')
     const ls = shuffle(letters)
 
     function start() {
         i = 0;
         katex.render(ls[i].tex, view)
         answer.focus()
+        updateCounter()
+    }
+
+    function updateCounter() {
+        count.textContent = i + '/' + ls.length
     }
 
     answer.addEventListener('keyup', () => {
@@ -91,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return
         }
 
+        updateCounter()
         katex.render(ls[i].tex, view)
     })
 

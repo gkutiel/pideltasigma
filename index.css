@@ -9,13 +9,14 @@ body {
     padding: 0;
     height: 100%;
     width: 100%;
+    color: #333;
 }
 
 #content {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 #view {
@@ -26,10 +27,15 @@ body {
 #answer {
     padding-top: 1em;
     padding-bottom: .5em;
-    width: 10em;
+    width: 13em;
     text-align: center;
     font-size: 200%;
     border: none;
     border-bottom: 1px solid #999;
     outline: none;
+}
+
+#count {
+    text-align: center;
+    padding: 1em;
 }
