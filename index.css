@@ -1,0 +1,27 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#content {
+    width: 90%;
+    margin: 30% auto;
+    text-align: center;
+}
+
+#view {
+    text-align: center;
+}
+
+#answer {
+    padding-bottom: .5em;
+    width: 10em;
+    text-align: center;
+    font-size: 200%;
+    border: none;
+    border-bottom: 1px solid #999;
+    outline: none;
+}
