@@ -1,0 +1,22 @@
+{
+  "name": "pideltasigma",
+  "version": "1.0.0",
+  "description": "Learn the Greek alphabet",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkutiel/pideltasigma.git"
+  },
+  "author": "Gilad Kutiel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gkutiel/pideltasigma/issues"
+  },
+  "homepage": "https://github.com/gkutiel/pideltasigma#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
+}
