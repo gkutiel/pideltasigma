@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateCounter() {
-        count.textContent = i + '/' + ls.length
+        count.textContent = (i + 1) + '/' + ls.length
     }
 
     answer.addEventListener('keyup', () => {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (str !== ls[i].str) return
         answer.value = ''
         if (++i >= ls.length) {
-            console.log('TODO DONE')
+            view.textContent = 'Well Done !!!'
             return
         }
 
