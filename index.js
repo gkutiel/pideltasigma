@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     answer.addEventListener('keyup', () => {
-        const str = answer.value
+        const str = answer.value.toLowerCase()
         if (str !== ls[i].str) return
         answer.value = ''
         if (++i >= ls.length) {
